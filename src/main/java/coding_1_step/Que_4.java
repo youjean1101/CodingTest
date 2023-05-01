@@ -49,13 +49,13 @@ public class Que_4 {
 //		}
 //		System.out.println(sum);
 		//정답
-//		System.out.println("더할 3개의 숫자를 입력하세요(공백으로분류).");
-//		long A = sc.nextLong();
-//		long B = sc.nextLong();
-//		long C = sc.nextLong();
-//		System.out.println(A+B+C);
+		System.out.println("더할 3개의 숫자를 입력하세요(공백으로분류).");
+		long A = sc.nextLong();
+		long B = sc.nextLong();
+		long C = sc.nextLong();
+		System.out.println(A+B+C);
 		
-		// 아래 예제와 같이 고양이를 출력하시오.
+		//3.  아래 예제와 같이 고양이를 출력하시오.
 		System.out.println("\\    /\\");
 		System.out.println(" )  ( ')");
 		System.out.println("(  /  )");
