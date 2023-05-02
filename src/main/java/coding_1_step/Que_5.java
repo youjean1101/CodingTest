@@ -64,7 +64,7 @@ public class Que_5 {
 //			System.out.println("F");
 //		}
 		
-		// 입력값을 bufferReader로 받아 실행시간 및 메모리 줄이기
+		// 입력값을 bufferReader로 받아 실행시간 및 메모리 줄이기 (다른 사람 코드 참고)
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("bufferReader로 입력받기");
