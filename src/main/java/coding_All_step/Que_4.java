@@ -1,4 +1,4 @@
-package coding_1_step;
+package coding_All_step;
 
 import java.util.Scanner;
 
