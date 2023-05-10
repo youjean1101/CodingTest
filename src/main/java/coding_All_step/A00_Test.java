@@ -4,11 +4,16 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+import java.util.stream.Collectors;
 
 public class A00_Test {
 	
 	static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static final StringBuilder sb = new StringBuilder();
+    static StringTokenizer st;
     // final : 변수 수정 불가 (인스턴스 X)
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -34,21 +39,22 @@ public class A00_Test {
 //        }
 //        System.out.println(sb);
 //        br.close();
+		 int N2 = Integer.parseInt(br.readLine());
+         int [] arr2;
+         int max2 = Integer.MIN_VALUE;
+         int min2  = Integer.MAX_VALUE;
+
+         st = new StringTokenizer(br.readLine()," ");
+         arr2 = new int[N2];
+         for (int i = 0; i < N2; i++) {
+             arr2[i] = Integer.parseInt(st.nextToken());
+             min2 = Math.min(min2, arr2[i]); // 작은 수
+             max2 = Math.max(max2, arr2[i]); // 큰 수
+         }
+
+         System.out.println(min2+" "+max2);
         
-		int line = Integer.parseInt(br.readLine());
-		StringBuilder sb = new StringBuilder();
-		String str;
-		for (int i = 1; i < line + 1; i++) {
-			str = br.readLine();
-			System.out.println("0!!"+(str.charAt(0)-'0')); //아스키코드 뺸거같음.
-			System.out.println("2!!"+(str.charAt(2)-'0')); //아스키코드 뺸거같음.
-			System.out.println("진짜합!!"+(str.charAt(0)-'0' + str.charAt(2)-'0')); //아스키코드 뺸거같음.
-			System.out.println("str.charAt(0)"+str.charAt(0));
-			System.out.println("str.charAt(2)"+str.charAt(2));
-			sb.append("Case #").append(i).append(": ").append(str.charAt(0) - '0' + str.charAt(2) - '0').append("\n");
-		}
-		br.close();
-		System.out.print(sb);
+         
 		 
 	}
 	
