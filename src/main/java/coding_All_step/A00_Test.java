@@ -39,20 +39,19 @@ public class A00_Test {
 //        }
 //        System.out.println(sb);
 //        br.close();
-		 int N2 = Integer.parseInt(br.readLine());
-         int [] arr2;
-         int max2 = Integer.MIN_VALUE;
-         int min2  = Integer.MAX_VALUE;
-
-         st = new StringTokenizer(br.readLine()," ");
-         arr2 = new int[N2];
-         for (int i = 0; i < N2; i++) {
-             arr2[i] = Integer.parseInt(st.nextToken());
-             min2 = Math.min(min2, arr2[i]); // 작은 수
-             max2 = Math.max(max2, arr2[i]); // 큰 수
-         }
-
-         System.out.println(min2+" "+max2);
+			boolean[] arr = new boolean[42];
+			
+//		    int count = 0;
+//		    for(int i = 0; i < 10; i++){
+//		        arr[Integer.parseInt(br.readLine())%42] = true;
+//		    }
+		    for(boolean value : arr){
+		    	System.out.println(arr.length);
+//		        if(value){
+//		            count++;
+//		        }
+		    }
+//		    System.out.println(count);
         
          
 		 
