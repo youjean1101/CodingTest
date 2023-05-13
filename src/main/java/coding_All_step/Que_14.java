@@ -55,8 +55,8 @@ public class Que_14 {
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
 		
-		int N = Integer.parseInt(st.nextToken());
-		int M = Integer.parseInt(st.nextToken());
+		int N = Integer.parseInt(st.nextToken()); // 바구니 갯수
+		int M = Integer.parseInt(st.nextToken()); // 변경횟수
 		int []basketArr = new int[N];
 		
 		for(int a=0;a<N;a++) {
@@ -68,10 +68,10 @@ public class Que_14 {
 			int i = Integer.parseInt(st.nextToken())-1;
 			int j = Integer.parseInt(st.nextToken())-1;
 			if(i!=j) {
-				for(int b=i;b<=j;b++) { // 더 확인하기
-					int temp = basketArr[b];
-					basketArr[b]= basketArr[j-b]; 
-					basketArr[j-b] = temp;
+				while(i < j) { // 알고리즘 공부하기
+					int temp = basketArr[i];
+					basketArr[i++]= basketArr[j]; 
+					basketArr[j--] = temp;
 				}
 			}
 		}
@@ -104,7 +104,7 @@ public class Que_14 {
 		String[] line = br.readLine().split(" ");
         int max2 = 0;
         double sum2 = 0;
-        for(int i = 0; i < N; i++){
+        for(int i = 0; i < N; i++){ 
             int s = Integer.parseInt(line[i]);
             max2 = Math.max(max2, s);
             sum2 += (double) s;
